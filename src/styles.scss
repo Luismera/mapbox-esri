@@ -1,0 +1,189 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "assets/vendors/global/vendors.bundle.css";
+@import "assets/vendors/global/fonts/smart-helios/css/smart-helios.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~material-design-icons/iconfont/material-icons.css";
+@import "~highlight.js/styles/googlecode.css";
+@import "~mapbox-gl/dist/mapbox-gl.css";
+@import "~@mapbox/mapbox-gl-geocoder/lib/mapbox-gl-geocoder.css";
+// hide bootstrap dropdown arrow globally
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.mat-table__wrapper--dashboard .mat-table {
+    min-width: 600px!important;
+    width: 100% !important;
+}
+
+.position-static {
+    position: static;
+}
+
+// Indicadores
+.scrollbar-smhe {
+    .ps-content {
+        white-space: nowrap;
+    }
+}
+
+perfect-scrollbar.scrollbar-smhe.ps-show-active>.ps.ps--active-x> {
+    .ps-overlay:not(.ps-at-left) .ps-indicator-left,
+    .ps-overlay:not(.ps-at-right) .ps-indicator-right {
+        background: transparent !important;
+    }
+}
+
+perfect-scrollbar.scrollbar-smhe>.ps.ps--active-x>.ps__rail-x {
+    display: none;
+}
+
+// Mapa
+.mapboxgl-ctrl-bottom-left {
+    a.mapboxgl-ctrl-logo {
+        display: none;
+    }
+}
+
+.mapboxgl-ctrl-top-left {
+    left: 85px;
+}
+
+
+// Select2
+.select2-smhe {
+    .select2-container--default {
+        width: 100% !important;
+        .select2-selection--multiple,
+        .select2-selection--single {
+            border: 1px solid #3a77ff;
+            background-color: transparent;
+            .select2-selection__rendered {
+                color: #ffffff;
+            }
+            .select2-selection__arrow {
+                color: #3a77ff;
+            }
+        }
+    }
+    .select2-container--default.select2-container--focus,
+    .select2-container--default.select2-container--open {
+        .select2-selection--multiple,
+        .select2-selection--single {
+            border: 1px solid #3a77ff;
+        }
+    }
+
+    .select2-selection.select2-selection--multiple{
+        .select2-selection__rendered{
+            max-height: 70px;
+            overflow-y: auto;
+            .select2-selection__choice {
+                color: #fff;
+                background: #5a5a5a;
+                border: 1px solid #5a5a5a;
+                .select2-selection__choice__remove{
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}
+
+// Select2 Dropdown
+.select2-container--default {
+    .select2-dropdown-smhe.select2-dropdown {
+        background-color: #000;
+        border: 1px solid #3a77ff;
+    }
+    .select2-dropdown-smhe {
+        .select2-search--dropdown {
+            .select2-search__field {
+                border: 1px solid #6e6c6d;
+                background: transparent;
+                color: #6e6c6d;
+            }
+        }
+        .select2-results {
+            color: #ffffff;
+        }
+        .select2-results__option.select2-results__option--highlighted,
+        .select2-results__option[aria-selected=true] {
+            background-color: #1b1b1b;
+            color: #ffffff;
+        }
+    }
+}
+
+.select2-container--default {
+    .select2-dropdown-smhe.select2-dropdown-smhe-multi {
+        .select2-results__option[aria-selected=true]{
+            background: #2b2b2b;
+        }
+    }
+}
+
+
+// Chart Estadistica 
+.graphic-transparent {
+    .kt-portlet {
+        background-color: transparent;
+    }
+}
+
+.nav-tabs {
+    background-color: #222222;
+    border-bottom: 1px solid #222222;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-tabs .nav-item .nav-link.active,
+.nav-tabs .nav-item .nav-link:active,
+.nav-tabs .nav-item .nav-link:hover {
+    background-color: #222222;
+    border-color: #222222;
+    border-bottom-color: #2a7bff;
+    border-bottom-width: 3px;
+}
+
+.marker {
+    background-image: url('/assets/img/icons/icon_person.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.kt-chartjs-tooltip {
+    opacity: 1;
+    position: absolute;
+    background: rgba(0, 0, 0, .9);
+    color: white;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    padding: 10px;
+    z-index: 1;
+}
+.chartjs-tooltip-key {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+.kt-quick-panel.kt-panel-smart-helios{
+    opacity: 1 !important;
+    transition: left .3s ease,right .3s ease !important;
+    -webkit-transition: left .3s ease,right .3s ease !important;
+}

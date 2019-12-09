@@ -1,0 +1,339 @@
+:host {
+	::ng-deep {
+		.toggleMenuLeft
+			> .mapboxgl-map
+			> .mapboxgl-control-container
+			> .mapboxgl-ctrl-top-left {
+			left: 56px !important;
+		}
+		.mapboxgl-ctrl-top-left {
+			top: 235px;
+			left: 120px;
+			margin-top: -30px;
+
+			.mapboxgl-ctrl-group {
+				background-color: unset;
+				border: none;
+				box-shadow: none;
+			}
+
+			.mapboxgl-ctrl-icon {
+				background-color: rgba(0, 0, 0, 0.7);
+				margin-bottom: 1px;
+				border: none;
+				background-image: none;
+			}
+
+			.mapboxgl-ctrl-zoom-in:before {
+				font-family: "smart helios" !important;
+				color: white;
+				content: "\e931";
+			}
+
+			.mapboxgl-ctrl-zoom-out:before {
+				font-family: "smart helios" !important;
+				color: white;
+				content: "\e929";
+			}
+		}
+	}
+}
+
+mgl-map {
+	height: 100vh;
+	width: 100vw;
+	padding: 0px;
+}
+
+mgl-control {
+	margin-right: 15px;
+}
+.map-btns {
+	position: fixed;
+	top: 165px;
+	left: 130px;
+	z-index: 4;
+
+	.map-btn {
+		display: flex;
+		border-radius: 100%;
+		background: #3a77ff;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+		color: #ffffff;
+		font-size: 19px;
+		padding: 5px;
+		margin-bottom: 10px;
+	}
+}
+
+.left-toogle-menu-search {
+	left: 65px;
+}
+
+.homebtn {
+	font-size: 21px;
+	color: #222222;
+	position: fixed;
+	top: 270px;
+	left: 160px;
+	width: 30px;
+	height: 30px;
+	border-width: 3px;
+	border-radius: 3px;
+	background-color: #fff;
+	border-color: #73ad21;
+	z-index: 4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.homebtn :hover {
+	font-size: 24px;
+	color: #222222;
+	position: fixed;
+	top: 270px;
+	left: 160px;
+	width: 30px;
+	height: 30px;
+	border-width: 3px;
+	border-radius: 3px;
+	background-color: #eaeaea;
+	border-color: #73ad21;
+	z-index: 4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.marker {
+	background-image: url("/assets/img/icons/icon_person.png");
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.backscreen {
+	width: 1000px;
+	height: 1000px;
+	background-color: #fff;
+	opacity: 0.3;
+	z-index: 2;
+}
+.popupScreen {
+	display: none;
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	opacity: 0.5;
+}
+.show {
+	display: block;
+}
+.hide {
+	display: none;
+}
+
+#geoinfo {
+	//position: fixed;
+	position: absolute;
+	//margin-left: 40%;
+	padding: 10px 15px 10px 15px;
+	//top: 80px;
+	top: 0px;
+	right: 0px;
+	width: 180px;
+	height: auto;
+	border-width: 3px;
+	color: #fff;
+	background: black;
+	border-radius: 4px;
+	// border-color: #73ad21;
+	z-index: 9999;
+	font-size: 12px;
+	font-family: "Montserrat";
+	opacity: 0.7;
+	margin-top: -50px;
+}
+
+.map-overlay {
+	margin-right: -190px !important;
+	margin-top: 50px !important;
+}
+
+:host {
+	::ng-deep {
+		.ngb-tp-meridian {
+			.btn-outline-primary {
+				background-color: #3a77ff;
+				border-color: #3a77ff;
+				color: #000;
+				&:hover,
+				&:focus,
+				&:not(:disabled):not(.disabled).active,
+				&:not(:disabled):not(.disabled):active {
+					background-color: #3a77ff;
+					border-color: #3a77ff;
+					color: #000;
+				}
+			}
+		}
+		//Timepicker
+		.sths-timepicker {
+			.ngb-tp-spacer {
+				width: 0rem;
+			}
+			.ngb-tp-input-container {
+				width: auto;
+				position: relative;
+				.ngb-tp-input {
+					text-align: left;
+				}
+				.form-control {
+					padding: 0.65rem 2rem 0.65rem 1rem;
+					background: transparent;
+					color: #fff;
+					border-color: #3a77ff;
+				}
+				.btn-link {
+					position: absolute;
+					top: 0;
+					right: 4px;
+					height: 50%;
+					color: #3a77ff;
+					&:hover,
+					&:focus {
+						background: transparent;
+						color: inherit;
+					}
+				}
+				input + .btn-link {
+					top: auto;
+					bottom: 0;
+				}
+				.ngb-tp-chevron,
+				.ngb-tp-chevron::after {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					align-items: center;
+				}
+				.ngb-tp-chevron::before {
+					display: none;
+				}
+				.ngb-tp-chevron::after {
+					content: "\e90d";
+					font-family: "smart helios" !important;
+					border: 0;
+					font-size: 2rem;
+					line-height: 0;
+					height: 10px;
+					top: 40%;
+					overflow: hidden;
+				}
+				.ngb-tp-chevron.bottom::after {
+					content: "\e908";
+					top: auto;
+					bottom: 40%;
+				}
+			}
+		}
+		//Datepicker
+		.ngb-dp-months,
+		.bg-light {
+			background: #e1e1e1 !important;
+		}
+		.ngb-dp-weekdays {
+			border: 0px !important;
+			.ngb-dp-weekday {
+				font-style: normal;
+				color: #000;
+				font-weight: 700;
+			}
+		}
+		.ngb-dp-navigation-chevron,
+		.ngb-dp-navigation-chevron.right {
+			border: 0px !important;
+			-webkit-transform: rotate(0deg) !important;
+			transform: rotate(0deg) !important;
+		}
+		.ngb-dp-arrow {
+			.btn-link,
+			&.right .btn-link {
+				position: relative;
+				width: 20px;
+				color: #000;
+			}
+			.btn-link:hover,
+			.btn-link:focus {
+				color: inherit;
+				background: transparent;
+			}
+			.ngb-dp-navigation-chevron {
+				position: absolute;
+				top: 0;
+				left: 0;
+				margin: 0;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+			.ngb-dp-navigation-chevron::before {
+				content: "\e909";
+				display: block;
+				font-family: "smart helios" !important;
+				font-size: 2rem;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+			&.right .ngb-dp-navigation-chevron::before {
+				content: "\e90c";
+			}
+		}
+		.ngb-dp-day,
+		.ngb-dp-today {
+			outline: 0 !important;
+			.btn-light {
+				position: relative;
+				font-weight: 700;
+				color: #6c6c6d;
+				&:hover,
+				&:focus,
+				&.active,
+				&.bg-primary {
+					background: #3a77ff !important;
+					color: #000 !important;
+				}
+				&:hover::before,
+				&:focus::before,
+				&.active::before,
+				&.bg-primary::before {
+					content: "";
+					width: 0;
+					height: 0;
+					position: absolute;
+					bottom: -1px;
+					right: -1px;
+					border-width: 3.8px;
+					border-style: solid;
+					border-color: transparent transparent transparent #000;
+					-webkit-transform: rotate(45deg);
+					transform: rotate(45deg);
+				}
+			}
+		}
+		.transition {
+			-webkit-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+		}
+	}
+}
+

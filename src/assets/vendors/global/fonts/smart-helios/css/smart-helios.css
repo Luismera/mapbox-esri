@@ -1,0 +1,229 @@
+@font-face {
+	font-family: "smart helios";
+	src: url("../fonts/smart-helios.eot?xle1fx");
+	src: url("../fonts/smart-helios.eot?xle1fx#iefix")
+			format("embedded-opentype"),
+		url("../fonts/smart-helios.ttf?xle1fx") format("truetype"),
+		url("../fonts/smart-helios.woff?xle1fx") format("woff"),
+		url("../fonts/smart-helios.svg?xle1fx#smart-helios") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="smart-icon-"],
+[class*=" smart-icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "smart helios" !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.smart-icon-equal:before {
+	content: "\e900";
+}
+.smart-icon-equal-stop:before {
+	content: "\e93d";
+}
+.smart-icon-Minería:before {
+	content: "\e901";
+}
+.smart-icon-admin-asignado:before {
+	content: "\e902";
+}
+.smart-icon-admin-mineria:before {
+	content: "\e903";
+}
+
+.smart-icon-advertencia:before {
+	content: "\e904";
+}
+.smart-icon-Agua:before {
+	content: "\e905";
+}
+.smart-icon-Aire:before {
+	content: "\e906";
+}
+.smart-icon-aprovechamiento-fauna:before {
+	content: "\e907";
+}
+.smart-icon-arrow-down:before {
+	content: "\e908";
+}
+.smart-icon-arrow-left:before {
+	content: "\e909";
+}
+.smart-icon-arrow-line-down:before {
+	content: "\e90a";
+}
+.smart-icon-arrow-line-up:before {
+	content: "\e90b";
+}
+.smart-icon-arrow-right:before {
+	content: "\e90c";
+}
+.smart-icon-arrow-up:before {
+	content: "\e90d";
+}
+.smart-icon-asociar-dispositivos:before {
+	content: "\e90e";
+}
+.smart-icon-ayuda:before {
+	content: "\e90f";
+}
+.smart-icon-buses:before {
+	content: "\e910";
+}
+.smart-icon-calendar:before {
+	content: "\e911";
+}
+.smart-icon-capas:before {
+	content: "\e912";
+}
+.smart-icon-categorias:before {
+	content: "\e913";
+}
+.smart-icon-caza:before {
+	content: "\e914";
+}
+.smart-icon-cerrar-sesion:before {
+	content: "\e915";
+}
+.smart-icon-Clima:before {
+	content: "\e916";
+}
+.smart-icon-clock:before {
+	content: "\e917";
+}
+.smart-icon-close:before {
+	content: "\e918";
+}
+.smart-icon-criadero:before {
+	content: "\e919";
+}
+.smart-icon-datos-basica:before {
+	content: "\e91a";
+}
+.smart-icon-sheet-text:before {
+	content: "\e940";
+}
+.smart-icon-search-sheet:before {
+	content: "\e941";
+}
+.smart-icon-editar-cuadro:before {
+	content: "\e91b";
+}
+.smart-icon-editar:before {
+	content: "\e91c";
+}
+.smart-icon-eliminar:before {
+	content: "\e91d";
+}
+.smart-icon-empresa:before {
+	content: "\e91e";
+}
+.smart-icon-estaciones:before {
+	content: "\e91f";
+}
+.smart-icon-estadisticas:before {
+	content: "\e920";
+}
+.smart-icon-Fauna:before {
+	content: "\e921";
+}
+.smart-icon-filtro:before {
+	content: "\e922";
+}
+.smart-icon-Flora:before {
+	content: "\e923";
+}
+.smart-icon-grupo-dispositivos:before {
+	content: "\e924";
+}
+.smart-icon-guardar:before {
+	content: "\e925";
+}
+.smart-icon-home:before {
+	content: "\e926";
+}
+.smart-icon-id:before {
+	content: "\e927";
+}
+.smart-icon-menu:before {
+	content: "\e928";
+}
+.smart-icon-minus:before {
+	content: "\e929";
+}
+.smart-icon-movilizacion-de-especimenes:before {
+	content: "\e92a";
+}
+.smart-icon-nombre-categoria:before {
+	content: "\e92b";
+}
+.smart-icon-notificaciones:before {
+	content: "\e92c";
+}
+.smart-icon-obligaciones-fauna:before {
+	content: "\e92d";
+}
+.smart-icon-password:before {
+	content: "\e92e";
+}
+.smart-icon-patios:before {
+	content: "\e92f";
+}
+.smart-icon-pdf:before {
+	content: "\e930";
+}
+.smart-icon-plus:before {
+	content: "\e931";
+}
+.smart-icon-portales:before {
+	content: "\e932";
+}
+.smart-icon-Residuos:before {
+	content: "\e933";
+}
+.smart-icon-sanciones:before {
+	content: "\e934";
+}
+.smart-icon-search:before {
+	content: "\e935";
+}
+.smart-icon-settings:before {
+	content: "\e936";
+}
+.smart-icon-Suelos:before {
+	content: "\e937";
+}
+.smart-icon-tecnica:before {
+	content: "\e938";
+}
+.smart-icon-troncales:before {
+	content: "\e939";
+}
+.smart-icon-usuario:before {
+	content: "\e93a";
+}
+.smart-icon-zoo:before {
+	content: "\e93b";
+}
+.smart-icon-play:before {
+	content: "\e93c";
+}
+.smart-icon-play-left:before {
+	content: "\e93e";
+}
+.smart-icon-pause:before {
+	content: "\e9e2";
+}
+.smart-icon-laptop-x:before {
+	content: "\e93f";
+}

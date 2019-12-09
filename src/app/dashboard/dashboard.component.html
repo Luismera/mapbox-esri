@@ -1,0 +1,23 @@
+<div class="map-btns" [ngClass]="{'left-toogle-menu-search': !collapseLeftMenu}">
+  <!--<div class="map-btn">
+    <i class="smart-icon-search"></i>
+  </div>-->
+  <div id="geoinfo" [ngStyle]="{'top': tooltip.top+'px','left': tooltip.left+'px'}">
+  </div>  
+
+  <div class="map-btn" (click)="home($event)">
+    <i class="smart-icon-home" style="box-shadow: 0 0 20px #3a77ff"></i>
+  </div>
+</div>
+<mgl-map 
+  [ngClass]="{'toggleMenuLeft': !collapseLeftMenu}" 
+  [style]="'mapbox://styles/incdustry/ck06zcaly14ju1cpe4f9ziaki'"
+  [zoom]="mapzoom$ | async" 
+  (load)="setMap($event)" 
+  [center]="geocenter$ | async" 
+  [preserveDrawingBuffer]="true">
+
+  <div style="margin-left: 80px">
+    <mgl-control position="top-left" mglNavigation></mgl-control>
+  </div>
+</mgl-map>

@@ -1,0 +1,769 @@
+{
+  "topics": [
+      {
+          "topic_id": 1,
+          "name": "Aire",
+          "layers": [
+              {
+                  "layer_id": 1,
+                  "name": "Industrial",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/topics/1/layers/1",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 2,
+                  "name": "Industrial Olores Ofensivos",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/topics/1/layers/2",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 3,
+                  "name": "Estaciones",
+                  "resource": {
+                      "endpoint": "/pescar/topics/1/layers/Aire__0",
+                      "method": "GET"
+                  },
+                  "filter": [
+                      {
+                          "property": "Tipo_de_es",
+                          "values": [
+                              {
+                                  "value": "Manual",
+                                  "color": "#FF4524"
+                              },
+                              {
+                                  "value": "Automática",
+                                  "color": "#71FF2A"
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ],
+          "basics": [
+              {
+                  "basic_id": 3,
+                  "layers": [
+                      {
+                          "layer_id": 2
+                      },
+                      {
+                          "layer_id": 5
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "topic_id": 2,
+          "name": "Agua",
+          "layers": [
+              {
+                  "layer_id": 1,
+                  "name": "Permisos de Concesiones",
+                  "resource": {
+                      "endpoint": "/pescar/topics/2/layers/Agua__2",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 2,
+                  "name": "Permisos de Vertimientos",
+                  "resource": {
+                      "endpoint": "/pescar/topics/2/layers/Agua__8",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 3,
+                  "name": "Cámaras BochiCAR",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/topics/2/layers/3",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 4,
+                  "name": "Estaciones Climatológicas",
+                  "resource": {
+                      "endpoint": "/pescar/topics/2/layers/Agua__5",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 5,
+                  "name": "Predicción Climática",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/topics/2/layers/5",
+                      "method": "GET"
+                  }
+              }
+          ],
+          "basics": [
+              {
+                  "basic_id": 2,
+                  "layers": [
+                      {
+                          "layer_id": 2
+                      },
+                      {
+                          "layer_id": 3
+                      }
+                  ]
+              },
+              {
+                  "basic_id": 3,
+                  "layers": [
+                      {
+                          "layer_id": 2
+                      }
+                  ]
+              },
+              {
+                  "basic_id": 7,
+                  "layers": [
+                      {
+                          "layer_id": 2
+                      },
+                      {
+                          "layer_id": 3
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "topic_id": 3,
+          "name": "Suelos",
+          "layers": [
+              {
+                  "layer_id": 1,
+                  "name": "Mineria",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/topics/3/layers/1",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 1,
+                  "name": "Predios CAR",
+                  "resource": {
+                      "endpoint": "/pescar/topics/3/layers/Predios_CAR",
+                      "method": "GET"
+                  }
+              }
+          ],
+          "basics": [
+              {
+                  "basic_id": 2,
+                  "layers": [
+                      {
+                          "layer_id": 2
+                      },
+                      {
+                          "layer_id": 3
+                      }
+                  ]
+              },
+              {
+                  "basic_id": 3,
+                  "layers": [
+                      {
+                          "layer_id": 2
+                      }
+                  ]
+              },
+              {
+                  "basic_id": 7,
+                  "layers": [
+                      {
+                          "layer_id": 2
+                      },
+                      {
+                          "layer_id": 3
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "topic_id": 4,
+          "name": "Fauna",
+          "layers": [
+              {
+                  "layer_id": 1,
+                  "name": "Permisos Aprovechamiento Fauna",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/topics/4/layers/1",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 2,
+                  "name": "Afectación Fauna",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/topics/4/layers/2",
+                      "method": "GET"
+                  }
+              }
+          ],
+          "basics": [
+              {
+                  "basic_id": 2,
+                  "layers": [
+                      {
+                          "layer_id": 2
+                      },
+                      {
+                          "layer_id": 3
+                      }
+                  ]
+              },
+              {
+                  "basic_id": 3,
+                  "layers": [
+                      {
+                          "layer_id": 2
+                      }
+                  ]
+              },
+              {
+                  "basic_id": 7,
+                  "layers": [
+                      {
+                          "layer_id": 2
+                      },
+                      {
+                          "layer_id": 3
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "topic_id": 5,
+          "name": "Flora",
+          "layers": [
+              {
+                  "layer_id": 1,
+                  "name": "Predios",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/topics/5/layers/1",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 2,
+                  "name": "Imágenes Satelitales",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/topics/5/layers/2",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 3,
+                  "name": "Parques",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/topics/5/layers/3",
+                      "method": "GET"
+                  }
+              }
+          ],
+          "basics": [
+              {
+                  "basic_id": 2,
+                  "layers": [
+                      {
+                          "layer_id": 2
+                      },
+                      {
+                          "layer_id": 3
+                      }
+                  ]
+              },
+              {
+                  "basic_id": 3,
+                  "layers": [
+                      {
+                          "layer_id": 2
+                      }
+                  ]
+              },
+              {
+                  "basic_id": 7,
+                  "layers": [
+                      {
+                          "layer_id": 2
+                      },
+                      {
+                          "layer_id": 3
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "topic_id": 6,
+          "name": "Residuos",
+          "layers": [
+              {
+                  "layer_id": 1,
+                  "name": "Rua y Respel",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/topics/6/layers/1",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 2,
+                  "name": "Empresas Gestoras",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/topics/6/layers/2",
+                      "method": "GET"
+                  }
+              }
+          ],
+          "basics": [
+              {
+                  "basic_id": 2,
+                  "layers": [
+                      {
+                          "layer_id": 2
+                      },
+                      {
+                          "layer_id": 3
+                      }
+                  ]
+              },
+              {
+                  "basic_id": 3,
+                  "layers": [
+                      {
+                          "layer_id": 2
+                      }
+                  ]
+              },
+              {
+                  "basic_id": 7,
+                  "layers": [
+                      {
+                          "layer_id": 3
+                      }
+                  ]
+              }
+          ]
+      }
+  ],
+  "basics": [
+      {
+          "basic_id": 1,
+          "name": "Áreas de importancia Ambiental",
+          "layers": [
+              {
+                  "layer_id": 1,
+                  "name": "Áreas Naturales Protegidas",
+                  "resource": {
+                      "endpoint": "/pescar/basics/1/layers/Ecosistemas__7",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 2,
+                  "name": "Páramo",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/basics/1/layers/Ecosistemas__4",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 3,
+                  "name": "Parques CAR",
+                  "resource": {
+                      "endpoint": "/pescar/basics/1/layers/Parques_CAR",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 4,
+                  "name": "Reserva Natural de la Sociedad Civil",
+                  "resource": {
+                      "endpoint": "/pescar/basics/1/layers/Ecosistemas__6",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 5,
+                  "name": "Rondas Hídricas",
+                  "resource": {
+                      "endpoint": "/pescar/basics/1/layers/Ecosistemas__3",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 6,
+                  "name": "Zona de Vida",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/basics/1/layers/6",
+                      "method": "GET"
+                  }
+              }
+          ]
+      },
+      {
+          "basic_id": 2,
+          "name": "Cuerpos Hidricos",
+          "layers": [
+              {
+                  "layer_id": 1,
+                  "name": "Cuencas de 3er Orden",
+                  "resource": {
+                      "endpoint": "/pescar/basics/2/layers/Agua__14",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 2,
+                  "name": "Embalse",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/basics/2/layers/2",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 3,
+                  "name": "Laguna",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/basics/2/layers/3",
+                      "method": "GET"
+                  }
+              }
+          ]
+      },
+      {
+          "basic_id": 3,
+          "name": "División Territorial",
+          "layers": [
+              {
+                  "layer_id": 1,
+                  "name": "Departamento",
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Division_territorial__4",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 2,
+                  "name": "Direcciones Regionales",
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Division_territorial__5",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 3,
+                  "name": "Municipio",
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Division_territorial__6",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 5,
+                  "name": "Vía",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/5",
+                      "method": "GET"
+                  }
+              }
+          ]
+      },
+      {
+          "basic_id": 4,
+          "name": "Predios Jurisdicción CAR",
+          "layers": [
+              {
+                  "layer_id": 1,
+                  "name": "Predial DRAG",
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Predial_Integrado__0",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 2,
+                  "name": "Predial DRAM",
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Predial_Integrado__1",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 3,
+                  "name": "Predial DRBC",
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Predial_Integrado__2",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 4,
+                  "name": "Predial DRBM",
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Predial_Integrado__3",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 5,
+                  "name": "Predial DRCH",
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Predial_Integrado__4",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 6,
+                  "name": "Predial DRGU",
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Predial_Integrado__5",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 7,
+                  "name": "Predial DRMC",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Predial_Integrado__6",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 8,
+                  "name": "Predial DRRN",
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Predial_Integrado__7",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 9,
+                  "name": "Predial DRSC",
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Predial_Integrado__8",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 10,
+                  "name": "Predial DRSO",
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Predial_Integrado__9",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 11,
+                  "name": "Predial DRSOA",
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Predial_Integrado__10",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 12,
+                  "name": "Predial DRSU",
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Predial_Integrado__11",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 13,
+                  "name": "Predial DRTE",
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Predial_Integrado__12",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 14,
+                  "name": "Predial DRUB",
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Predial_Integrado__13",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 15,
+                  "name": "Predial Bogotá",
+                  "resource": {
+                      "endpoint": "/pescar/basics/3/layers/Predial_Integrado__14",
+                      "method": "GET"
+                  }
+              }
+          ]
+      },
+      {
+          "basic_id": 5,
+          "name": "Ecosistema",
+          "layers": [
+              {
+                  "layer_id": 1,
+                  "name": "Bosques",
+                  "resource": {
+                      "endpoint": "/pescar/basics/4/layers/Suelos__7",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 2,
+                  "name": "Ecosistemas",
+                  "resource": {
+                      "endpoint": "/pescar/basics/4/layers/Ecosistemas__0",
+                      "method": "GET"
+                  }
+              }
+          ]
+      },
+      {
+          "basic_id": 6,
+          "name": "Pomcas",
+          "layers": [
+              {
+                  "layer_id": 1,
+                  "name": "Zonificación Ambiental POMCA Río Alto Suárez 2018 - 240101",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/basics/5/layers/1",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 2,
+                  "name": "Zonificación Ambiental POMCA Río Blanco Guayuriba - 3502",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/basics/5/layers/2",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 3,
+                  "name": "Zonificación Ambiental POMCA Río Bogotá - 2120",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/basics/5/layers/3",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 4,
+                  "name": "Zonificación Ambiental POMCA Río Gachetá - 3506",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/basics/5/layers/4",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 5,
+                  "name": "Zonificación Ambiental POMCA Río Garagoa 2018 - 3507",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/basics/5/layers/5",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 6,
+                  "name": "Zonificación Ambiental POMCA Río Medio y Bajo Suárez 2018 - 240102",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/basics/5/layers/6",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 7,
+                  "name": "Zonificación Ambiental POMCA Río Minero - 2312",
+                  "resource": {
+                      "endpoint": "/pescar/basics/5/layers/Pomcas__1",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 8,
+                  "name": "Zonificación Ambiental POMCA Rionegro - 2306",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/basics/5/layers/8",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 9,
+                  "name": "Zonificación Ambiental POMCA Vertiente Oriental Río Magdalena - 2123",
+                  "resource": {
+                      "endpoint": "/pescar/basics/5/layers/Pomcas__5",
+                      "method": "GET"
+                  }
+              }
+          ]
+      },
+      {
+          "basic_id": 7,
+          "name": "Rios",
+          "layers": [
+              {
+                  "layer_id": 1,
+                  "name": "Canal",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/basics/6/layers/1",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 2,
+                  "name": "Quebrada",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/basics/6/layers/2",
+                      "method": "GET"
+                  }
+              },
+              {
+                  "layer_id": 3,
+                  "name": "Rio",
+                  "disabled": true,
+                  "resource": {
+                      "endpoint": "/pescar/basics/6/layers/3",
+                      "method": "GET"
+                  }
+              }
+          ]
+      }
+  ]
+}
