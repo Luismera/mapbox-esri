@@ -47,7 +47,7 @@
     "highlight.js": "^9.15.6",
     "hls.js": "^0.12.4",
     "jquery": "^3.4.1",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.21",
     "mapbox-gl": "^0.53.1",
     "material-design-icons": "^3.0.1",
     "moment": "^2.23.0",
