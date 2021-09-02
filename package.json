@@ -63,7 +63,7 @@
     "ngx-mapbox-gl": "^3.1.0",
     "ngx-perfect-scrollbar": "^7.2.1",
     "ngx-permissions": "^6.0.5",
-    "object-path": "^0.11.4",
+    "object-path": "^0.11.6",
     "rxjs": "^6.3.3",
     "select2": "^4.0.7-rc.0",
     "tokml": "^0.4.0",
